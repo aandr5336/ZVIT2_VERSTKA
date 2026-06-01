@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght=700;900&family=DM+Sans:wght=300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -28,7 +29,9 @@
     </div>
   </header>
 
+
   <div class="overlay" id="overlay"></div>
+
 
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
     <button class="mobile-menu-close" id="menu-close" aria-label="Закрити меню">
@@ -44,6 +47,7 @@
       </ul>
     </nav>
   </div>
+
 
   <section class="hero" id="home">
     <div class="hero-bg"></div>
@@ -74,10 +78,351 @@
           </div>
         </div>
       </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="hero-card-img">
+            <svg width="100" height="80" viewBox="0 0 100 80" fill="none">
+              <rect x="10" y="50" width="80" height="25" rx="4" fill="var(--text3)"/>
+              <polygon points="50,5 90,48 10,48" fill="var(--text3)"/>
+              <circle cx="75" cy="15" r="12" fill="var(--text3)"/>
+            </svg>
+          </div>
+          <div class="hero-card-tags">
+            <span class="course-tag">Математика · 9 клас</span>
+            <span class="top-course-inline"><i class="fa-solid fa-fire"></i> ТОП КУРС</span>
+          </div>
+          <h3 class="hero-card-title">Алгебра та геометрія</h3>
+          <p class="hero-card-sub">24 уроки · Сертифікат</p>
+        </div>
       </div>
+    </div>
   </section>
 
-  
 
+  <div class="register-bar">
+    <div class="container">
+      <div>
+        <h2>Введіть email щоб розпочати</h2>
+        <p>Отримайте доступ до першого модуля безкоштовно</p>
+      </div>
+      <div class="register-form" data-prefill-group>
+        <input type="email" id="bar-email" placeholder="Email адреса">
+        <button class="btn btn-white" id="bar-start-btn">Почати курс <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+
+
+  <section id="about">
+    <div class="container">
+      <div class="description-grid">
+        <div class="desc-text">
+          <div class="section-label">Опис програми</div>
+          <h2 class="section-title">Для кого цей курс?</h2>
+          <p>Наша платформа створена для школярів 5–11 класів, які хочуть навчатися у зручному темпі, не відриваючись від шкільної програми.</p>
+          <p>Підходить для учнів, яким потрібна додаткова допомога, а також для тих, хто готується до НМТ.</p>
+          <p>Гнучкий розклад дозволяє поєднувати навчання зі спортом, хобі та іншими активностями.</p>
+        </div>
+        <div class="desc-features">
+          <div class="section-label">Що в курсі?</div>
+          <h2 class="section-title">Що ви отримаєте?</h2>
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fa-solid fa-video"></i></div>
+            <div class="feature-text">
+              <strong>Відеоуроки HD</strong>
+              <span>Понад 500 уроків від кращих вчителів України</span>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fa-solid fa-pen"></i></div>
+            <div class="feature-text">
+              <strong>Практичні завдання</strong>
+              <span>Тести та задачі з автоматичною перевіркою</span>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fa-solid fa-award"></i></div>
+            <div class="feature-text">
+              <strong>Сертифікати</strong>
+              <span>Офіційні документи після завершення курсу</span>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fa-solid fa-comments"></i></div>
+            <div class="feature-text">
+              <strong>Підтримка 24/7</strong>
+              <span>Чат з куратором та спільнота однолітків</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="modules" class="modules-bg">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="section-label">Програма навчання</div>
+          <h2 class="section-title">Що ви вивчите</h2>
+        </div>
+        <p class="section-desc">Три модулі, що охоплюють усі ключові аспекти шкільної програми</p>
+      </div>
+      <div class="modules-grid">
+        <div class="module-card">
+          <div class="module-num">01</div>
+          <h3>Основи та база</h3>
+          <p>Фундаментальні знання з математики, фізики та хімії. Структурований підхід від простого до складного.</p>
+        </div>
+        <div class="module-card">
+          <div class="module-num">02</div>
+          <h3>Поглиблене вивчення</h3>
+          <p>Олімпіадні задачі та нестандартні підходи. Розвиток критичного мислення та аналітичних навичок.</p>
+        </div>
+        <div class="module-card">
+          <div class="module-num">03</div>
+          <h3>Підготовка до іспитів</h3>
+          <p>Інтенсивна підготовка до ДПА та НМТ. Пробні тести у форматі реальних іспитів.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="instructor">
+    <div class="container">
+      <div class="instructor-grid">
+        <div class="position-relative">
+          <div class="instructor-photo">
+            <svg viewBox="0 0 200 200" fill="var(--text3)">
+              <circle cx="100" cy="80" r="45"/>
+              <ellipse cx="100" cy="170" rx="70" ry="45"/>
+            </svg>
+          </div>
+          <div class="instructor-tag">
+            <div class="name">Марія Коваленко</div>
+            <div class="role">Вчитель вищої категорії</div>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="social-link" aria-label="Twitter (X)"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="instructor-content">
+          <div class="section-label">Про викладача</div>
+          <h2 class="section-title">Ваш наставник</h2>
+          <p>Марія Коваленко — вчитель з 15-річним досвідом, лауреат премії «Вчитель року». Авторка 3 підручників для середньої школи.</p>
+          <p>Її учні щорічно посідають призові місця на олімпіадах обласного та всеукраїнського рівня.</p>
+          <div class="credentials">
+            <div class="credential">Кандидат педагогічних наук</div>
+            <div class="credential">Автор 3 підручників</div>
+            <div class="credential">15+ років досвіду</div>
+            <div class="credential">Більше 500 випускників</div>
+          </div>
+          <div class="instructor-action">
+            <button class="btn btn-primary" id="instructor-enroll-btn">Записатись до Марії <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="testimonials" class="testimonials-bg">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="section-label">Відгуки</div>
+          <h2 class="section-title">Що кажуть учні</h2>
+        </div>
+      </div>
+      <div id="splide-reviews" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="testimonial-card">
+                <p class="testimonial-quote">Ця платформа змінила моє ставлення до навчання. Математика більше не здається страшною.</p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">ОК</div>
+                  <div>
+                    <div class="author-name">Олексій Кравченко</div>
+                    <div class="author-role">Учень 10 класу, Київ</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="testimonial-card">
+                <p class="testimonial-quote">Завдяки EduFlex мій син підняв оцінки з фізики з 6 до 11. Пояснення зрозумілі.</p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">НС</div>
+                  <div>
+                    <div class="author-name">Наталія Сидоренко</div>
+                    <div class="author-role">Мама учня, Харків</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="testimonial-card">
+                <p class="testimonial-quote">Готувалась до НМТ за 3 місяці. Результат — 196 балів з математики. Рекомендую!</p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">АМ</div>
+                  <div>
+                    <div class="author-name">Аліна Мельник</div>
+                    <div class="author-role">Абітурієнт 2026, Львів</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="countdown-section">
+    <div class="container">
+      <div class="section-label">Спеціальна пропозиція</div>
+      <h2 class="section-title">Набір закривається через</h2>
+      <p>Встигніть записатись на новий потік зі знижкою 30%</p>
+      <div class="countdown">
+        <div class="countdown-item">
+          <span class="countdown-num" id="cd-days">00</span>
+          <span class="countdown-label">Днів</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-num" id="cd-hours">00</span>
+          <span class="countdown-label">Годин</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-num" id="cd-mins">00</span>
+          <span class="countdown-label">Хвилин</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-num" id="cd-secs">00</span>
+          <span class="countdown-label">Секунд</span>
+        </div>
+      </div>
+      <button class="btn btn-white" id="countdown-cta-btn">Скористатись пропозицією <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </section>
+
+
+  <section class="final-cta">
+    <div class="container">
+      <div>
+        <div class="section-label">Почніть сьогодні</div>
+        <h2 class="section-title">Зареєструйтесь, щоб дізнатись більше</h2>
+        <p class="cta-desc">Введіть email — отримайте безкоштовний доступ до першого модуля</p>
+        <div class="register-form footer-register-form" data-prefill-group>
+          <input type="email" id="footer-email" placeholder="Email адреса">
+          <button class="btn btn-primary" id="footer-start-btn">Почати курс <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <p class="cta-note">Без спаму. Відписка у будь-який момент.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <a href="#" class="logo footer-logo">Edu<span>Flex</span></a>
+          <p class="footer-desc">Платформа дистанційного навчання для школярів України</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">Про нас</a>
+          <a href="#modules">Програма</a>
+          <a href="#instructor">Викладач</a>
+          <a href="#testimonials">Відгуки</a>
+          <a href="#" id="footer-enroll-btn">Записатись</a>
+        </div>
+      </div>
+      <div class="footer-copy">© 2026 EduFlex. Всі права захищені.</div>
+    </div>
+  </footer>
+
+
+  <button id="go-top" aria-label="Нагору">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+
+  <div id="cookie-bar">
+    <p><i class="fa-solid fa-cookie-bite"></i> Ми використовуємо cookies для покращення досвіду. <a href="#">Дізнатись більше</a></p>
+    <div class="cookie-actions">
+      <button class="btn btn-outline" id="cookie-decline">Відхилити</button>
+      <button class="btn btn-primary" id="cookie-accept">Прийняти</button>
+    </div>
+  </div>
+
+
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close-btn" aria-label="Закрити">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="modal-body" class="modal-body-content">
+        <h2 id="modal-title">Записатись на курс</h2>
+        <p class="modal-sub">Заповніть форму — ми зв'яжемось протягом 24 годин</p>
+        <form id="enroll-form" novalidate>
+          <div class="form-group" id="fg-name">
+            <label for="m-name">Ім'я та прізвище</label>
+            <input type="text" id="m-name" placeholder="Тарас Шевченко">
+            <div class="error-msg" id="err-name">Введіть ваше ім'я</div>
+          </div>
+          <div class="form-group" id="fg-email">
+            <label for="m-email">Email адреса</label>
+            <input type="email" id="m-email" placeholder="taras@email.com">
+            <div class="error-msg" id="err-email">Введіть коректний email</div>
+          </div>
+          <div class="form-group">
+            <label for="m-grade">Клас</label>
+            <select id="m-grade">
+              <option value="">Оберіть клас</option>
+              <option>5 клас</option>
+              <option>6 клас</option>
+              <option>7 клас</option>
+              <option>8 клас</option>
+              <option>9 клас</option>
+              <option>10 клас</option>
+              <option>11 клас</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="m-subject">Предмет</label>
+            <select id="m-subject">
+              <option value="">Оберіть предмет</option>
+              <option>Математика</option>
+              <option>Фізика</option>
+              <option>Хімія</option>
+              <option>Біологія</option>
+              <option>Українська мова</option>
+              <option>Англійська мова</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="m-msg">Коментар (необов'язково)</label>
+            <textarea id="m-msg" placeholder="Розкажіть про свої цілі..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit-btn">Надіслати заявку <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+      <div id="form-success" class="form-success">
+        <div class="success-icon"><i class="fa-solid fa-circle-check" style="color: var(--accent)"></i></div>
+        <h3 class="success-title">Заявку отримано!</h3>
+        <p class="success-desc">Ми зв'яжемось протягом 24 годин. Перевірте пошту.</p>
+        <button class="btn btn-primary" id="success-close-btn">Закрити</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
